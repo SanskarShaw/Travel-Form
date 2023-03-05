@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position:relative;
+}
+body::before{
+    content: "";
+    background-image: url("https://mywbut.com/logo_pic/b874cb07e96925c1d108a406d67e7688.jpeg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0%;
+    bottom: 0px;
+    opacity: 0.35;
+    z-index:-1;
+}
+.container{
+    max-width: 100vh;
+    height:auto;
+    margin: auto; 
+    position: relative;
+    padding: 16px 16px 0px 16px;
+    
+}
+form{
+    margin-left:20px; 
+}
+
+h1{
+    margin-bottom:20px;
+    text-align:center;
+}
+p{
+    text-align:center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.submsg{
+    color:green;
+    
+}
+label{
+    display:inline-block;
+    width:275px;
+    margin:20px 0px;
+    font-size: 20px;
+}
+input{
+    accent-color:blue;
+}
+input[type="radio"]
+{
+    width:70px;
+}
+input,#year{
+    padding:5px;
+}
+span{
+    font-size:18px;
+}
+#address{
+    padding:5px;
+    height:30px;
+}
+#sub{
+    margin:60px 5px 20px 0px;
+    cursor:pointer;
+}
+#res{
+    cursor:pointer;
+}
+#fname,#mname,#lname,#mail,#year,#enroll,#regs,#age,#contact
+{
+    width:270px;
+    font-size: 15px;
+    color:blue;
+    padding:5px;
+    border: none;
+}
+#year{
+    width:280px;
+}
+#sub,#res{
+    width:80px;
+    height:40px;
+    padding:10px;
+    font-size:15px;
+    border:1px solid rgb(38, 38, 44);
+    border-radius:10px;
+    
+}
+#sub:hover {
+    background-color:bisque;
+}
+#res:hover {
+    background-color: bisque;
+}
+
+.popup{
+    width:250px;
+    background:white;
+    border-radius: 6px;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    text-align:center;
+    padding:0px 30px 30px;
+    color:#333;
+    visibility:hidden;
+}
+.popup img{
+    width:100px;
+    margin-top:-50px;
+    border-radius:50%;
+}
+.popup h2{
+    font-size:38px;
+    font-weight: 500;
+    margin:30px 0px 10px;
+}
+.popup button{
+    width: 100%;margin-top:50px;
+    padding:10px 0px;
+    background:#6fd649;
+    color:#fff;
+    border:0;
+    font-size:18px;
+    border-radius:4px;
+    cursor:pointer;
+}
+.open-popup{
+    visibility:visible;
+}
+@media screen and (max-width:599px)
+{
+    form{
+        margin-left:10px;
+    }
+    input[type="radio"]
+    {
+        width:110px;
+    }
+}
+@media screen and (max-width:300px)
+{
+    label{
+        width:230px;
+    }
+    #fname,#mname,#lname,#mail,#year,#enroll,#regs,#age,#contact{
+        width:230px;
+    }
+    #address{
+        width:230px;
+    }
+    .popup{
+        width:150px;
+    }
+}
